@@ -34,12 +34,12 @@ const AchivementSection = () => {
                 {achivementsList?.map((achive, i) => {
                     return (
                         <div key={i} className='flex flex-col items-center justify-center mx-4'>
-                            <h2 className='text-black text-4xl font-bold flex flex-row'>
-                                {achive?.prefix}
+                            <h2 className='text-black text-4xl   font-bold flex flex-row'>
+                                {/* {achive?.prefix} */}
                                 <AnimatedNumbers includeComma 
                                 animateToNumber={parseInt(achive?.value)} 
                                 locale='en-US'
-                                className='text-black text-4xl font-bold'
+                                className='text-black text-2xl md:text-4xl font-bold'
                                 configs={((_,index)=>{
                                     return{
                                         mass:1,
@@ -50,7 +50,7 @@ const AchivementSection = () => {
                                 />
                                  {achive?.postfix}
                                 </h2>
-                            <p className='text-[#6d6f70]  font-bold  '>{achive?.metric}</p>
+                            <p className='text-[#6d6f70]  font-bold  text-base'>{achive?.metric}</p>
                         </div>
                     )
                 })}
