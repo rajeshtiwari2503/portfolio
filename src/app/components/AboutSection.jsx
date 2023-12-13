@@ -27,8 +27,10 @@ const tabData = [
         id: "education",
         content: (
             <ul className='list-disc pl-2'>
-                <li>education</li>
-                <li>education</li>
+                <li>Bachelor of Computer Application (BCA) from MCRP Univercity Bhopal (M.P.)</li>
+                <li>Master in Computer Application (MCA) from AKTU (U.P.)</li>
+
+
             </ul>
         )
     },
@@ -55,8 +57,17 @@ const AboutSection = () => {
 
     return (
         <section className='text-white'>
-            <div className='md:grid md:grid-cols-2    gap-8 items-center py-8    sm:py-16    '>
-                <Image src="next.svg" height={500} width={500} />
+            <div className='md:grid md:grid-cols-2    gap-8  items-center py-8    sm:py-16    '>
+                <div className='flex items-center justify-between'>
+                <div className=''>
+                        <Image src="reacticon.svg" height={200} width={200} />
+                    </div>
+                    <div className='ml-4'>
+                        <Image src="next.svg" height={200} width={200} />
+                    </div>
+                    
+                </div>
+
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-fold text-white mb-4'>About Me</h2>
                     <p>
@@ -78,11 +89,11 @@ const AboutSection = () => {
                             active={tab === "education"}>
                             Education
                         </TabButtons>
-                        <TabButtons
+                        {/* <TabButtons
                             selectTab={() => handleTabChange("certifications")}
                             active={tab === "certifications"}>
                             Certifications
-                        </TabButtons>
+                        </TabButtons> */}
                     </div>
                     <div className='mt-8 pl-2'>
                         {tabData?.find((f) => f?.id === tab)?.content}

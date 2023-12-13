@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const EmailSection = () => {
     return (
@@ -12,12 +14,15 @@ const EmailSection = () => {
                     I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
                 </p>
                 <div>
-                    <Link href={"github"}>
-                        <Image scr={"image"} alt="image" />
+
+                    <Link className='cursor-pointer' href={"https://github.com/rajeshtiwari2503"} target='_black'>
+                        <GitHubIcon fontSize='large' style={{ color: "#c0b4b4" }} />
                     </Link>
-                    <Link href={"github"}>
-                        <Image scr={"image"} alt="image" />
+
+                    <Link className='cursor-pointer ms-8' href={"https://www.linkedin.com/in/rajesh-tiwari-9162bb189"} target='_black'>
+                        <LinkedInIcon fontSize='large' style={{ color: "#c0b4b4" }} />
                     </Link>
+
                 </div>
             </div>
             <div>

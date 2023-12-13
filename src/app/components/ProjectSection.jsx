@@ -6,41 +6,33 @@ import { motion ,useInView} from "framer-motion"
 import { useRef } from 'react';
 
 const projectData = [
+     
     {
         id: 1,
-        title: "React PortFolio Website",
-        image: "next.svg",
-        des: "1 description",
+        title: "  SpareTrade  ",
+        image: "sparetrade.png",
+        des: "Using React Js,Next Js,HTML ,CSS Javascript,MUI ,Bootstrap and other libraries",
         tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/"
+        gitUrl: "https://www.sparetrade.in/",
+        previewUrl: "https://www.sparetrade.in/"
     },
     {
-        id: 1,
-        title: "React SpareTrade Website",
-        image: "next.svg",
-        des: "2 description",
+        id: 2,
+        title: " After Passout ",
+        image: "afterpassout.png",
+        des: "Using React Js,Next Js,HTML ,CSS Javascript,MUI ,Bootstrap and other libraries",
         tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/"
+        gitUrl: "https://afterpassout-frontend-chi.vercel.app/",
+        previewUrl: "https://afterpassout-frontend-chi.vercel.app/"
     },
     {
-        id: 1,
-        title: "React SpareTrade Admin Panel  ",
-        image: "next.svg",
-        des: "3 description",
-        tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/"
-    },
-    {
-        id: 1,
-        title: "React Lybley Website Admin Panel",
-        image: "next.svg",
-        des: "4 description",
+        id: 3,
+        title: "  Lybley  ",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlRdm4zyue6PGa2VZhO1EyqnRyK6V9NmCSnyfbxgBsOHse_53fD3V6&usqp=CAE&s",
+        des: "Using React Js,Next Js,HTML ,CSS Javascript,MUI ,Bootstrap and other libraries",
         tag: ["All", ],
-        gitUrl: "/",
-        previewUrl: "/"
+        gitUrl: "https://www.lybley.com/",
+        previewUrl: "https://www.lybley.com/"
     },
 
 ]
@@ -68,8 +60,8 @@ const isInView=useInView(ref,{once:true})
         <section>
             <h2 className='text-center text-4xl font-bold text-white mt-4'>My Projects</h2>
             <div className='  flex flex-row justify-center items-center gap-2 text-white py-6'>
-                <ProjectTags onClick={handleChangeTag} name="All" isSelected={tag === "All"} />
-                <ProjectTags onClick={handleChangeTag} name="Web" isSelected={tag === "Web"} />
+                {/* <ProjectTags onClick={handleChangeTag} name="All" isSelected={tag === "All"} />
+                <ProjectTags onClick={handleChangeTag} name="Web" isSelected={tag === "Web"} /> */}
             </div>
             <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
                 {filtredProjects?.map((item,index) => (
