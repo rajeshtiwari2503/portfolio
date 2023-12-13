@@ -39,7 +39,7 @@ const AchivementSection = () => {
                                 <AnimatedNumbers includeComma 
                                 animateToNumber={parseInt(achive?.value)} 
                                 locale='en-US'
-                                className='text-black text-2xl md:text-4xl font-bold'
+                                className='text-black  text-4xl font-bold'
                                 configs={((_,index)=>{
                                     return{
                                         mass:1,
