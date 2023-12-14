@@ -62,7 +62,7 @@ const AboutSection = () => {
                 <div className=''>
                         <Image src="reacticon.svg" height={200} width={200} />
                     </div>
-                    <div className='bg-white ml-4'>
+                    <div className='bg-white ml-4 p-8'>
                         <Image src="next.svg" height={200} width={200} />
                     </div>
                     
