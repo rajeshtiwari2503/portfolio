@@ -34,11 +34,23 @@ const Navbar = () => {
 
     return (
         <nav className='fixed top-0 border border-[#33353F] left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
-            <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2'>
-                <Link href={"/"} className='text-2xl md:text-5xl text-white font-semibold' >
-                    RJESH TIWARI
-                </Link>
-
+            <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-4'>
+                <div>
+                <Link href={"/"} className='text-2xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-purple-500 to-blue-400 
+                   sm:text-4xl lg:text-5xl font-extrabold leading-snug mb-4 md:mb-0' >
+                   PORTFOLIO
+                </Link> 
+                </div>
+ <li className='cursor-pointer'>
+                            <Link href={"https://github.com/rajeshtiwari2503"} target='_black'>
+                                <GitHubIcon fontSize='large' style={{ color: "#c0b4b4" }} />
+                            </Link>
+                        </li>
+                        <li className='cursor-pointer'>
+                            <Link href={"https://www.linkedin.com/in/rajesh-tiwari-9162bb189"} target='_black'>
+                                <LinkedInIcon fontSize='large' style={{ color: "#c0b4b4" }} />
+                            </Link>
+                        </li>
                 {/* <div className='mobile-menu block md:hidden'>
                     {!navbarOpen ? 
                     (<>
@@ -60,14 +72,14 @@ const Navbar = () => {
                 </div> 
             */}
                 {/* <div className='menu hidden md:block md:w-auto ' id='navbar'> */}
-                <div className='menu   ' id='navbar'>
+                {/* <div className='menu   ' id='navbar'>
                     <ul className='flex pt-2 pb-2 md:p-0  md:flex-row md:space-x-8 mt-0'>
-                        {/* {navLinks?.map((item, i) =>
+                        {navLinks?.map((item, i) =>
                             <li key={i}>
                                 <NavLink href={item?.path} title={item?.title} />
                             </li>
                              
-                        )} */}
+                        )}
                         <li className='cursor-pointer'>
                             <Link href={"https://github.com/rajeshtiwari2503"} target='_black'>
                                 <GitHubIcon fontSize='large' style={{ color: "#c0b4b4" }} />
@@ -79,7 +91,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
             {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
         </nav>
