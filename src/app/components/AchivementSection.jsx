@@ -14,6 +14,7 @@ const achievementsList = [
     value: "50",
     postfix: "+"
   },
+  
   {
     metric: "Active Users",
     value: "200000",
